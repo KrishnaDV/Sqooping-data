@@ -1,0 +1,7 @@
+sqoop import \
+--connect jdbc:oracle:thin:@localhost:1521/XE \
+--username test \
+--password test \
+--table nyse -m 1 \
+--columns "EXCHANGE,STOCK_SYMBOL,DT,STOCK_PRICE_OPEN,STOCK_PRICE_HIGH,STOCK_PRICE_LOW,STOCK_PRICE_CLOSE,STOCK_VOLUME,STOCK_PRICE_ADJ_CLOSE" \
+--delete-target-dir

@@ -1,0 +1,15 @@
+create table nyse(
+exchange varchar2(15),
+stock_symbol varchar2(15),
+dt varchar2(15),
+stock_price_open float,
+stock_price_high float,
+stock_price_low float,
+stock_price_close float,
+stock_volume int,
+stock_price_adj_close float);
+
+
+insert into nyse(exchange,STOCK_SYMBOL,DT,STOCK_PRICE_OPEN,STOCK_PRICE_HIGH,
+STOCK_PRICE_LOW, STOCK_PRICE_CLOSE,STOCK_VOLUME,STOCK_PRICE_ADJ_CLOSE)
+values('NASDAQ','BBND','08-02-2010',2.92,2.98,2.86,2.96,483800,2.96);
